@@ -47,10 +47,10 @@ class Blogposts extends React.Component {
 
     render() {
 
-        if (this.state.loading) return <div className="spinner"><ThreeDots fill="#e1bafd" trokeOpacity=".125" /></div>;
+        if (this.state.loading) return <div className="spinner"><ThreeDots fill="#e1bafd" strokeOpacity=".125" /></div>;
 
         return (
-            <div class="container">
+            <div className="container">
                 {this.state.posts.map((post, index) => (
                     <a key={index} href={`https://blog.rutikwankhade.dev/${post.slug}`} >
                         <Post post={post} />
